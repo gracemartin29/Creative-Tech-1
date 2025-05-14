@@ -14,7 +14,7 @@ void setup()
   
     // lcd screen
   lcd.clear();
-  lcd.begin(20, 4);
+  lcd.begin(16, 2);
 }
 
 void loop()
@@ -25,15 +25,9 @@ void loop()
   piezoLed.updateState(currentMillis);
   
 // update lcd screen text
-  lcd.setCursor(0, 1);
-  lcd.print("I");
-  
-  lcd.setCursor(2, 1);
-  lcd.print("AM...");
+  lcd.setCursor(0, 0);
+  lcd.print("I AM...");
 
-  lcd.setCursor(8, 2);
-  lcd.print("IRON");
-
-  lcd.setCursor(13, 2);
-  lcd.print("MANNNN");
+  lcd.setCursor(4, 1);
+  lcd.print("IRON MANNNN");
 };
